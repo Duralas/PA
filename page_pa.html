@@ -1,4 +1,4 @@
-<title>PA</title><meta http-equiv="Content-type" content="text/html; charset=utf-8" /><link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet" /> <script src="//goo.gl/EkYJV"></script><script src="http://duralas.forumgratuit.org/16042.js"></script><style type="text/css">
+<title>PA</title><meta http-equiv="Content-type" content="text/html; charset=utf-8" /><link href="https://fonts.googleapis.com/css?family=Merienda|Philosopher" rel="stylesheet" /><script src="//goo.gl/EkYJV"></script><script src="http://duralas.forumgratuit.org/16042.js"></script><style type="text/css">
 	body {
 	    font-family: 'Philosopher', sans-serif;
 	}
@@ -142,6 +142,63 @@
 	    -webkit-transition: opacity 1s;
 	    -htm-transition: opacity 1s;
 	}
+
+	
+	/* Dernières annonces */
+	#pa_news {
+		border-spacing: 20px;
+		display: table;
+	}
+	.pa_news {
+		background-color: #543A1D;
+		color: #FFF;
+		display: table-cell;
+		font-family: 'Merienda', cursive;
+		font-size: 10px;
+		height: 200px;
+		position: relative;
+		width: 150px;
+	}
+	.pa_news-pin {
+		color: #000;
+		height: 10px;
+	}
+	.pin-left {
+		float: left;
+	}
+	.pin-right {
+		float: right;
+	}
+	.pin {
+		background-color: #000;
+		border: 1px solid #FFF;
+		border-radius: 10px 10px;
+		height: 8px;
+		width: 8px;
+	}
+	.pa_news-title {
+		border-bottom: 2px solid #EEE0D0;
+		color: #EEE0D0;
+		font-size: 12px;
+		margin: 0 5px 5px;
+		padding-bottom: 5px;
+		text-align: center;
+	}
+	.pa_news-content {
+		padding: 5px 10px;
+	}
+	.pa_news-link {
+		bottom: 0;
+		margin: 5px 0;
+		position: absolute;
+		text-align: center;
+		width: 100%;
+	}
+	.pa_news-link a {
+		color: #FFD966;
+		text-decoration: none;
+	}
+
 </style><script type="text/javascript">
 $(function(){ location.hash=location.hash });
 </script> 
@@ -158,9 +215,34 @@ $(function(){ location.hash=location.hash });
 			<div class="titre">
               Les dernières nouveautés                                              
 			</div>
-			                                                                                             
-			<div class="liste">
-               <br /> PA EN CONSTRUCTION, celle-ci est obsolète et sera bientôt remplacée !           
+
+			<div id="pa_news">
+				<div class="pa_news">
+					<div class="pa_news-pin">
+						<div class="pin pin-left"></div>
+						<div class="pin pin-right"></div>
+					</div>
+					<div class="pa_news-title">Ça resplendit !</div>
+					<div class="pa_news-content">
+						Pourquoi devoir écrire tant de choses quand on peut simplement dire n'importe quoi ?<br>
+						Tout cela va changer la donne chers Dùralassiens. Savez-vous pourquoi ?
+					</div>
+					<div class="pa_news-link"><a href="http://www.lemondededuralas.com" title="Vous allez simplement retourner sur Dùralas en cliquant là !">En savoir plus</a></div>
+				</div>
+
+				<div class="pa_news">
+					<div class="pa_news-pin">
+						<div class="pin pin-left"></div>
+						<div class="pin pin-right"></div>
+					</div>
+					<div class="pa_news-title">Aucune inquiétude !</div>
+					<div class="pa_news-content">
+						Ces quelques changements ne sont que des tets pour l'instant.<br>
+						Restez sur le qui-vive chers Dùralassiens :)
+					</div>
+					<div class="pa_news-link"><a href="http://www.lemondededuralas.com" title="Vous allez simplement retourner sur Dùralas en cliquant là !">En savoir plus</a></div>
+				</div>
+
 			</div>
 			                                              
 			<center>
