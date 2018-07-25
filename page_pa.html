@@ -1,4 +1,4 @@
-<title>PA</title><meta http-equiv="Content-type" content="text/html; charset=utf-8" /><link href="https://fonts.googleapis.com/css?family=Merienda|Philosopher" rel="stylesheet" /><script src="//goo.gl/EkYJV"></script><script src="http://duralas.forumgratuit.org/16042.js"></script><style type="text/css">
+<title>PA</title><meta http-equiv="Content-type" content="text/html; charset=utf-8" /><link href="https://fonts.googleapis.com/css?family=Merienda|Philosopher|Lobster" rel="stylesheet" /><script src="//goo.gl/EkYJV"></script><script src="http://duralas.forumgratuit.org/16042.js"></script><style type="text/css">
 	body {
 	    font-family: 'Philosopher', sans-serif;
 	}
@@ -204,6 +204,38 @@
 		text-decoration: none;
 	}
 
+	/* Réseaux sociaux */
+	.social_networks {
+		display: table;
+		width: 100%
+	}
+	.social_network {
+		display: table-row;
+		text-align: center;
+	}
+	.social_network_icon {
+		display: table-cell;
+	}
+	.social_network_icon > a {
+		background-color: #543A1D;
+		border: 1px solid #FFF;
+		border-radius: 20px 20px;
+		display: block;
+		font-size: 12px;
+		height: 30px;
+		line-height: 25px;
+		margin: auto;
+		text-decoration: none;
+		width: 30px;
+	}
+	a.facebook {
+		color: #4472C4;
+	}
+	a.pinterest {
+		color: #900;
+		font-family: 'Lobster', cursive;
+	}
+
 </style><script type="text/javascript">
 $(function(){ location.hash=location.hash });
 </script> 
@@ -324,9 +356,16 @@ $(function(){ location.hash=location.hash });
 			<div class="titre">
 				Retrouvez-nous sur les réseaux sociaux                                              
 			</div>
-			                                                                                             
-			<div class="liste">
-				Notre page facebook : <a target="_blank" href="https://www.facebook.com/pages/D%C3%B9ralas/295034540560264">Dùralas FB</a><br />Notre compte Pinterest :  <a target="_blank" href="http://www.pinterest.com/duralas/">Dùralas sur Pinterest</a>                                           
+
+			<div class="social_networks">
+				<div class="social_network">
+					<div class="social_network_icon">
+						<a class="facebook" target="_blank" href="https://www.facebook.com/pages/D%C3%B9ralas/295034540560264" title="Visitez notre page Facebook">f</a>
+					</div>
+					<div class="social_network_icon">
+						<a class="pinterest" target="_blank" href="http://www.pinterest.com/duralas/" title="Visitez notre compte Pinterest">P</a>
+					</div>
+				</div>
 			</div>
 			                                                                                             
 			<div class="titre">
@@ -342,7 +381,7 @@ $(function(){ location.hash=location.hash });
 			</div>
 			                                                                                             
 			<div class="liste">
-				<a target="_blank" href="http://www.root-top.com/topsite/serpentgy/in.php?IDmark=10489"><img src="https://image.noelshack.com/fichiers/2018/14/1/1522693775-logo1.png" class="topsite" /></a> <a target="_blank" href="http://www.root-top.com/topsite/obsession27/in.php?ID=25287"><img src="https://image.noelshack.com/fichiers/2018/14/1/1522694010-logo2.png" class="topsite" /></a> <a target="_blank" href="http://www.root-top.com/topsite/virtu4lgames/in.php?ID=5854"><img src="https://image.noelshack.com/fichiers/2018/14/1/1522693775-logo1.png" class="topsite" /></a>                        <br /> <a href="http://www.lemondededuralas.org/t431-votes-pour-les-top-sites-nouveau-format" class="postlink" target="_blank" rel="nofollow"><span>Vous pouvez aller recenser vos points en cliquant ici</span></a>                 
+				<a target="_blank" href="http://www.root-top.com/topsite/serpentgy/in.php?IDmark=10489"><img src="https://image.noelshack.com/fichiers/2018/14/1/1522693775-logo1.png" class="topsite" /></a> <a target="_blank" href="http://www.root-top.com/topsite/obsession27/in.php?ID=25287"><img src="https://i13.servimg.com/u/f13/11/12/92/75/logo_o10.png" class="topsite" /></a> <a target="_blank" href="http://www.root-top.com/topsite/virtu4lgames/in.php?ID=5854"><img src="https://i13.servimg.com/u/f13/11/12/92/75/logo_b10.png" class="topsite" /></a>                        <br /> <a href="http://www.lemondededuralas.org/t431-votes-pour-les-top-sites-nouveau-format" class="postlink" target="_blank" rel="nofollow"><span>Vous pouvez aller recenser vos points en cliquant ici</span></a>                 
 			</div>
 			                                                                                            
 		</div>
@@ -353,7 +392,7 @@ $(function(){ location.hash=location.hash });
 <script type="text/javascript">
 	$(function (){
 	/* * * * * * Les dernières annonces * * * * * */
-	let paNewsGabarit = "<div class=\"pa_news\"><div class=\"pa_news-pin\"><div class=\"pin pin-left\"></div><div class=\"pin pin-right\"></div></div><div class=\"pa_news-title\"></div><div class=\"pa_news-content\"></div><div class=\"pa_news-link\"><a href=\"\">En savoir plus</a></div></div>";
+	let paNewsGabarit = "<div class=\"pa_news\"><div class=\"pa_news-pin\"><div class=\"pin pin-left\"></div><div class=\"pin pin-right\"></div></div><div class=\"pa_news-title\"></div><div class=\"pa_news-content\"></div><div class=\"pa_news-link\"><a target=\"_blank\">En savoir plus</a></div></div>";
 	let $paNews = $("#pa_news");
 	let newsData = [
 		{
