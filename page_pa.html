@@ -133,21 +133,6 @@
 	    width:80px;
 	    padding:5px;
 	}
-
-	.topsite {
-	    height:50px;
-	    padding-left:70px;
-
-	    opacity: 0.5;
-	    -moz-opacity: 0.5;
-	    filter: alpha(opacity=50);
-	    transition: opacity 1s;
-	    -moz-transition: opacity 1s;
-	    -o-transition: opacity 1s;
-	    -webkit-transition: opacity 1s;
-	    -htm-transition: opacity 1s;
-	}
-
 	
 	/* Dernières annonces */
 	#pa_news {
@@ -207,6 +192,7 @@
 	/* Réseaux sociaux */
 	.social_networks {
 		display: table;
+		margin: 15px 0 5px;
 		width: 100%
 	}
 	.social_network {
@@ -221,9 +207,9 @@
 		border: 1px solid #FFF;
 		border-radius: 20px 20px;
 		display: block;
-		font-size: 12px;
+		font-size: 13px;
 		height: 30px;
-		line-height: 25px;
+		line-height: 27px;
 		margin: auto;
 		text-decoration: none;
 		width: 30px;
@@ -235,6 +221,60 @@
 		color: #900;
 		font-family: 'Lobster', cursive;
 	}
+
+	/* Top sites */
+	.topsites {
+		display: table;
+		width: 100%
+	}
+	.topsites-top {
+		margin-top: 15px;
+	}
+	.topsites-bottom {
+		margin-bottom: 5px;
+	}
+	.topsite-row {
+		display: table-row;
+	}
+	.topsite-cell {
+		display: table-cell;
+	}
+	.topsite-middle {
+		margin: auto;
+		text-align: center
+	}
+	.topsite-right {
+		text-align: right;
+	}
+	.topsite-text {
+		font-family: 'Merienda', cursive;
+		font-size: 12px;
+		text-align: center;
+		vertical-align: middle;
+	}
+	.topsite-text > a {
+		color: #FFF;
+		text-decoration: none;
+	}
+	.topsite-icon > a {
+		display: block;
+	}
+	.topsite-icon img {
+	    height:50px;
+
+	    opacity: 0.5;
+	    -moz-opacity: 0.5;
+	    filter: alpha(opacity=50);
+	    transition: opacity 1s;
+	    -moz-transition: opacity 1s;
+	    -o-transition: opacity 1s;
+	    -webkit-transition: opacity 1s;
+	    -htm-transition: opacity 1s;
+	}
+	.topsite-icon.topsite-middle img {
+		transform: rotate(180deg) scaleX(-1);
+	}
+
 
 </style><script type="text/javascript">
 $(function(){ location.hash=location.hash });
@@ -377,11 +417,37 @@ $(function(){ location.hash=location.hash });
 			</div>
 			                                            
 			<div class="titre">
-				Votez toutes les deux heures pour supporter Dùralas                                              
+				Votez toutes les deux heures pour nous soutenir !
 			</div>
-			                                                                                             
-			<div class="liste">
-				<a target="_blank" href="http://www.root-top.com/topsite/serpentgy/in.php?IDmark=10489"><img src="https://image.noelshack.com/fichiers/2018/14/1/1522693775-logo1.png" class="topsite" /></a> <a target="_blank" href="http://www.root-top.com/topsite/obsession27/in.php?ID=25287"><img src="https://i13.servimg.com/u/f13/11/12/92/75/logo_o10.png" class="topsite" /></a> <a target="_blank" href="http://www.root-top.com/topsite/virtu4lgames/in.php?ID=5854"><img src="https://i13.servimg.com/u/f13/11/12/92/75/logo_b10.png" class="topsite" /></a>                        <br /> <a href="http://www.lemondededuralas.org/t431-votes-pour-les-top-sites-nouveau-format" class="postlink" target="_blank" rel="nofollow"><span>Vous pouvez aller recenser vos points en cliquant ici</span></a>                 
+
+			<div class="topsites topsites-top">
+				<div class="topsite-row">
+					<div class="topsite-cell topsite-icon topsite-left">
+						<a href="http://www.root-top.com/topsite/serpentgy/in.php?IDmark=10489" target="_blank" class="topsite-left" title="Top-site 1">
+							<img src="https://image.noelshack.com/fichiers/2018/14/1/1522693775-logo1.png" alt="Dragon rouge">
+						</a>
+					</div>
+					<div class="topsite-cell topsite-text">
+						<a href="http://www.lemondededuralas.org/t431-votes-pour-les-top-sites-nouveau-format" target="_blank" title="Recensement de vos points de vote.">
+							Recensez vos points sur ce sujet.
+						</a>
+					</div>
+					<div class="topsite-cell topsite-icon topsite-right">
+						<a href="http://www.root-top.com/topsite/virtu4lgames/in.php?ID=5854" target="_blank" class="topsite-right" title="Top-site 2">
+							<img src="https://i13.servimg.com/u/f13/11/12/92/75/logo_b10.png" alt="Dragon bleu">
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="topsites topsites-bottom">
+				<div class="topsite-row">
+					<div class="topsite-cell topsite-icon topsite-middle">
+						<a href="http://www.root-top.com/topsite/obsession27/in.php?ID=25287" target="_blank" title="Top-site 3">
+							<img src="https://i13.servimg.com/u/f13/11/12/92/75/logo_o12.png" alt="Dragon jaune">
+						</a>
+					</div>
+				</div>
 			</div>
 			                                                                                            
 		</div>
